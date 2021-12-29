@@ -1,0 +1,660 @@
+
+clear
+
+ Set DefaultBaseFrequency=50
+
+new circuit.name bus1=bus1 baseKv=20 angle=0 frequency=50 phases=3 MVAsc1=102 MVAsc3=102 x1r1=10.1 x0r0=10
+
+new line.6087844 bus1=bus_32.1.2.3.4 bus2=bus_33.1.2.3.4 length=0.07 phases=4 units=km rmatrix=[0.92857 | 0 0.92857 | 0 0 0.92857 | 0 0 0 1.0238 ] xmatrix=[0.085721 |  0 0.085721 | 0 0 0.085721 | 0 0 0 1.3381] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098582 bus1=bus_56.1.2.3.4 bus2=bus2.1.2.3.4 length=0.057 phases=4 units=km rmatrix=[0.45614 | 0 0.45614 | 0 0 0.45614 | 0 0 0 1.1813 ] xmatrix=[0.087634 |  0 0.087634 | 0 0 0.087634 | 0 0 0 1.2041] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098583 bus1=bus_56.1.2.3.4 bus2=bus_57.1.2.3.4 length=0.094 phases=4 units=km rmatrix=[0.46809 | 0 0.46809 | 0 0 0.46809 | 0 0 0 1.1773 ] xmatrix=[0.085224 |  0 0.085224 | 0 0 0.085224 | 0 0 0 1.2049] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098585 bus1=bus_57.1.2.3.4 bus2=bus_58.1.2.3.4 length=0.025 phases=4 units=km rmatrix=[0.48 | 0 0.48 | 0 0 0.48 | 0 0 0 1.1733 ] xmatrix=[0.080048 |  0 0.080048 | 0 0 0.080048 | 0 0 0 1.2067] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098589 bus1=bus_58.1.2.3.4 bus2=bus_59.1.2.3.4 length=0.132 phases=4 units=km rmatrix=[0.46212 | 0 0.46212 | 0 0 0.46212 | 0 0 0 1.1793 ] xmatrix=[0.0833 |  0 0.0833 | 0 0 0.0833 | 0 0 0 1.2056] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098590 bus1=bus_59.1.2.3.4 bus2=bus_60.1.2.3.4 length=0.066 phases=4 units=km rmatrix=[0.92424 | 0 0.92424 | 0 0 0.92424 | 0 0 0 1.0253 ] xmatrix=[0.075684 |  0 0.075684 | 0 0 0.075684 | 0 0 0 1.3414] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098597 bus1=bus2.1.2.3.4 bus2=bus4.1.2.3.4 length=0.02 phases=4 units=km rmatrix=[0.75 | 0 0.75 | 0 0 0.75 | 0 0 0 1.0833 ] xmatrix=[0.10006 |  0 0.10006 | 0 0 0.10006 | 0 0 0 1.3333] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098626 bus1=bus_61.1.2.3.4 bus2=bus2.1.2.3.4 length=0.176 phases=4 units=km rmatrix=[0.46591 | 0 0.46591 | 0 0 0.46591 | 0 0 0 1.178 ] xmatrix=[0.079611 |  0 0.079611 | 0 0 0.079611 | 0 0 0 1.2068] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098628 bus1=bus_61.1.2.3.4 bus2=bus_63.1.2.3.4 length=0.098 phases=4 units=km rmatrix=[0.45918 | 0 0.45918 | 0 0 0.45918 | 0 0 0 1.1803 ] xmatrix=[0.081746 |  0 0.081746 | 0 0 0.081746 | 0 0 0 1.2061] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098630 bus1=bus_63.1.2.3.4 bus2=bus_64.1.2.3.4 length=0.027 phases=4 units=km rmatrix=[0.48148 | 0 0.48148 | 0 0 0.48148 | 0 0 0 1.1728 ] xmatrix=[0.074118 |  0 0.074118 | 0 0 0.074118 | 0 0 0 1.2086] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098632 bus1=bus_61.1.2.3.4 bus2=bus_62.1.2.3.4 length=0.037 phases=4 units=km rmatrix=[0.91892 | 0 0.91892 | 0 0 0.91892 | 0 0 0 1.027 ] xmatrix=[0.081087 |  0 0.081087 | 0 0 0.081087 | 0 0 0 1.3396] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098731 bus1=bus_64.1.2.3.4 bus2=bus_65.1.2.3.4 length=0.025 phases=4 units=km rmatrix=[0.92 | 0 0.92 | 0 0 0.92 | 0 0 0 1.0267 ] xmatrix=[0.080048 |  0 0.080048 | 0 0 0.080048 | 0 0 0 1.34] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098732 bus1=bus_64.1.2.3.4 bus2=bus_67.1.2.3.4 length=0.121 phases=4 units=km rmatrix=[0.46281 | 0 0.46281 | 0 0 0.46281 | 0 0 0 1.1791 ] xmatrix=[0.082564 |  0 0.082564 | 0 0 0.082564 | 0 0 0 1.2058] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098733 bus1=bus_64.1.2.3.4 bus2=bus_66.1.2.3.4 length=0.035 phases=4 units=km rmatrix=[0.94286 | 0 0.94286 | 0 0 0.94286 | 0 0 0 1.019 ] xmatrix=[0.085721 |  0 0.085721 | 0 0 0.085721 | 0 0 0 1.3381] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098734 bus1=bus_67.1.2.3.4 bus2=bus_68.1.2.3.4 length=0.032 phases=4 units=km rmatrix=[0.46875 | 0 0.46875 | 0 0 0.46875 | 0 0 0 1.1771 ] xmatrix=[0.093757 |  0 0.093757 | 0 0 0.093757 | 0 0 0 1.2021] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098735 bus1=bus_67.1.2.3.4 bus2=bus_69.1.2.3.4 length=0.104 phases=4 units=km rmatrix=[0.46154 | 0 0.46154 | 0 0 0.46154 | 0 0 0 1.1795 ] xmatrix=[0.086394 |  0 0.086394 | 0 0 0.086394 | 0 0 0 1.2045] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098736 bus1=bus_67.1.2.3.4 bus2=bus_70.1.2.3.4 length=0.017 phases=4 units=km rmatrix=[0.64706 | 0 0.64706 | 0 0 0.64706 | 0 0 0 1.1176 ] xmatrix=[0.058766 |  0 0.058766 | 0 0 0.058766 | 0 0 0 1.2471] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098737 bus1=bus_70.1.2.3.4 bus2=bus_71.1.2.3.4 length=0.024 phases=4 units=km rmatrix=[0.91667 | 0 0.91667 | 0 0 0.91667 | 0 0 0 1.0278 ] xmatrix=[0.083383 |  0 0.083383 | 0 0 0.083383 | 0 0 0 1.3389] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098738 bus1=bus_71.1.2.3.4 bus2=bus_72.1.2.3.4 length=0.044 phases=4 units=km rmatrix=[0.93182 | 0 0.93182 | 0 0 0.93182 | 0 0 0 1.0227 ] xmatrix=[0.090678 |  0 0.090678 | 0 0 0.090678 | 0 0 0 1.3364] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098740 bus1=bus_70.1.2.3.4 bus2=bus_74.1.2.3.4 length=0.018 phases=4 units=km rmatrix=[0.66667 | 0 0.66667 | 0 0 0.66667 | 0 0 0 1.1111 ] xmatrix=[0.055501 |  0 0.055501 | 0 0 0.055501 | 0 0 0 1.2482] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098742 bus1=bus_74.1.2.3.4 bus2=bus_75.1.2.3.4 length=0.064 phases=4 units=km rmatrix=[0.92188 | 0 0.92188 | 0 0 0.92188 | 0 0 0 1.026 ] xmatrix=[0.078049 |  0 0.078049 | 0 0 0.078049 | 0 0 0 1.3407] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098743 bus1=bus_75.1.2.3.4 bus2=bus_76.1.2.3.4 length=0.042 phases=4 units=km rmatrix=[0.92857 | 0 0.92857 | 0 0 0.92857 | 0 0 0 1.0238 ] xmatrix=[0.071434 |  0 0.071434 | 0 0 0.071434 | 0 0 0 1.3429] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098744 bus1=bus_76.1.2.3.4 bus2=bus_77.1.2.3.4 length=0.033 phases=4 units=km rmatrix=[0.93939 | 0 0.93939 | 0 0 0.93939 | 0 0 0 1.0202 ] xmatrix=[0.090916 |  0 0.090916 | 0 0 0.090916 | 0 0 0 1.3364] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098749 bus1=bus2.1.2.3.4 bus2=bus7.1.2.3.4 length=0.151 phases=4 units=km rmatrix=[0.46358 | 0 0.46358 | 0 0 0.46358 | 0 0 0 1.1788 ] xmatrix=[0.079476 |  0 0.079476 | 0 0 0.079476 | 0 0 0 1.2068] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098750 bus1=bus7.1.2.3.4 bus2=bus8.1.2.3.4 length=0.061 phases=4 units=km rmatrix=[0.93443 | 0 0.93443 | 0 0 0.93443 | 0 0 0 1.0219 ] xmatrix=[0.081887 |  0 0.081887 | 0 0 0.081887 | 0 0 0 1.3394] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098912 bus1=bus2.1.2.3.4 bus2=bus_11.1.2.3.4 length=0.081 phases=4 units=km rmatrix=[0.22222 | 0 0.22222 | 0 0 0.22222 | 0 0 0 1.2593 ] xmatrix=[0.07408 |  0 0.07408 | 0 0 0.07408 | 0 0 0 1.2086] cmatrix=[3e-07 | 0 3e-07 | 0 0 3e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098913 bus1=bus_11.1.2.3.4 bus2=bus_13.1.2.3.4 length=0.056 phases=4 units=km rmatrix=[0.21429 | 0 0.21429 | 0 0 0.21429 | 0 0 0 1.2619 ] xmatrix=[0.071247 |  0 0.071247 | 0 0 0.071247 | 0 0 0 1.2096] cmatrix=[3e-07 | 0 3e-07 | 0 0 3e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098914 bus1=bus_11.1.2.3.4 bus2=bus_12.1.2.3.4 length=0.048 phases=4 units=km rmatrix=[0.45833 | 0 0.45833 | 0 0 0.45833 | 0 0 0 1.1806 ] xmatrix=[0.083121 |  0 0.083121 | 0 0 0.083121 | 0 0 0 1.2056] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098915 bus1=bus_13.1.2.3.4 bus2=bus_26.1.2.3.4 length=0.108 phases=4 units=km rmatrix=[0.46296 | 0 0.46296 | 0 0 0.46296 | 0 0 0 1.179 ] xmatrix=[0.083194 |  0 0.083194 | 0 0 0.083194 | 0 0 0 1.2056] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098916 bus1=bus_26.1.2.3.4 bus2=bus_27.1.2.3.4 length=0.063 phases=4 units=km rmatrix=[0.46032 | 0 0.46032 | 0 0 0.46032 | 0 0 0 1.1799 ] xmatrix=[0.079288 |  0 0.079288 | 0 0 0.079288 | 0 0 0 1.2069] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098917 bus1=bus_27.1.2.3.4 bus2=bus_28.1.2.3.4 length=0.022 phases=4 units=km rmatrix=[0.45455 | 0 0.45455 | 0 0 0.45455 | 0 0 0 1.1818 ] xmatrix=[0.090963 |  0 0.090963 | 0 0 0.090963 | 0 0 0 1.203] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098919 bus1=bus_13.1.2.3.4 bus2=bus_30.1.2.3.4 length=0.077 phases=4 units=km rmatrix=[0.46753 | 0 0.46753 | 0 0 0.46753 | 0 0 0 1.1775 ] xmatrix=[0.077928 |  0 0.077928 | 0 0 0.077928 | 0 0 0 1.2074] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098920 bus1=bus_13.1.2.3.4 bus2=bus_14.1.2.3.4 length=0.066 phases=4 units=km rmatrix=[0.92424 | 0 0.92424 | 0 0 0.92424 | 0 0 0 1.0253 ] xmatrix=[0.075684 |  0 0.075684 | 0 0 0.075684 | 0 0 0 1.3414] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098921 bus1=bus_16.1.2.3.4 bus2=bus_14.1.2.3.4 length=0.06 phases=4 units=km rmatrix=[0.93333 | 0 0.93333 | 0 0 0.93333 | 0 0 0 1.0222 ] xmatrix=[0.083252 |  0 0.083252 | 0 0 0.083252 | 0 0 0 1.3389] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098922 bus1=bus_17.1.2.3.4 bus2=bus_16.1.2.3.4 length=0.033 phases=4 units=km rmatrix=[0.93939 | 0 0.93939 | 0 0 0.93939 | 0 0 0 1.0202 ] xmatrix=[0.090916 |  0 0.090916 | 0 0 0.090916 | 0 0 0 1.3364] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098923 bus1=bus_13.1.2.3.4 bus2=bus_29.1.2.3.4 length=0.045 phases=4 units=km rmatrix=[0.93333 | 0 0.93333 | 0 0 0.93333 | 0 0 0 1.0222 ] xmatrix=[0.088663 |  0 0.088663 | 0 0 0.088663 | 0 0 0 1.3371] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098924 bus1=bus_18.1.2.3.4 bus2=bus_14.1.2.3.4 length=0.052 phases=4 units=km rmatrix=[0.65385 | 0 0.65385 | 0 0 0.65385 | 0 0 0 1.1154 ] xmatrix=[0.076727 |  0 0.076727 | 0 0 0.076727 | 0 0 0 1.2411] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098926 bus1=bus_19.1.2.3.4 bus2=bus_18.1.2.3.4 length=0.036 phases=4 units=km rmatrix=[0.91667 | 0 0.91667 | 0 0 0.91667 | 0 0 0 1.0278 ] xmatrix=[0.083339 |  0 0.083339 | 0 0 0.083339 | 0 0 0 1.3389] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098927 bus1=bus_20.1.2.3.4 bus2=bus_19.1.2.3.4 length=0.029 phases=4 units=km rmatrix=[0.93103 | 0 0.93103 | 0 0 0.93103 | 0 0 0 1.023 ] xmatrix=[0.069007 |  0 0.069007 | 0 0 0.069007 | 0 0 0 1.3437] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098928 bus1=bus_22.1.2.3.4 bus2=bus_21.1.2.3.4 length=0.054 phases=4 units=km rmatrix=[0.92593 | 0 0.92593 | 0 0 0.92593 | 0 0 0 1.0247 ] xmatrix=[0.073886 |  0 0.073886 | 0 0 0.073886 | 0 0 0 1.342] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098929 bus1=bus_23.1.2.3.4 bus2=bus_22.1.2.3.4 length=0.034 phases=4 units=km rmatrix=[0.94118 | 0 0.94118 | 0 0 0.94118 | 0 0 0 1.0196 ] xmatrix=[0.088242 |  0 0.088242 | 0 0 0.088242 | 0 0 0 1.3373] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098974 bus1=bus_31.1.2.3.4 bus2=bus_13.1.2.3.4 length=0.116 phases=4 units=km rmatrix=[0.21552 | 0 0.21552 | 0 0 0.21552 | 0 0 0 1.2615 ] xmatrix=[0.077457 |  0 0.077457 | 0 0 0.077457 | 0 0 0 1.2075] cmatrix=[3e-07 | 0 3e-07 | 0 0 3e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098977 bus1=bus_31.1.2.3.4 bus2=bus_32.1.2.3.4 length=0.041 phases=4 units=km rmatrix=[0.92683 | 0 0.92683 | 0 0 0.92683 | 0 0 0 1.0244 ] xmatrix=[0.073176 |  0 0.073176 | 0 0 0.073176 | 0 0 0 1.3423] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098980 bus1=bus_31.1.2.3.4 bus2=bus_34.1.2.3.4 length=0.031 phases=4 units=km rmatrix=[0.93548 | 0 0.93548 | 0 0 0.93548 | 0 0 0 1.0215 ] xmatrix=[0.096781 |  0 0.096781 | 0 0 0.096781 | 0 0 0 1.3344] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098981 bus1=bus_34.1.2.3.4 bus2=bus_35.1.2.3.4 length=0.018 phases=4 units=km rmatrix=[0.94444 | 0 0.94444 | 0 0 0.94444 | 0 0 0 1.0185 ] xmatrix=[0.055501 |  0 0.055501 | 0 0 0.055501 | 0 0 0 1.3482] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098982 bus1=bus_31.1.2.3.4 bus2=bus_37.1.2.3.4 length=0.029 phases=4 units=km rmatrix=[0.93103 | 0 0.93103 | 0 0 0.93103 | 0 0 0 1.023 ] xmatrix=[0.069007 |  0 0.069007 | 0 0 0.069007 | 0 0 0 1.3437] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098983 bus1=bus_31.1.2.3.4 bus2=bus_36.1.2.3.4 length=0.034 phases=4 units=km rmatrix=[0.94118 | 0 0.94118 | 0 0 0.94118 | 0 0 0 1.0196 ] xmatrix=[0.088242 |  0 0.088242 | 0 0 0.088242 | 0 0 0 1.3373] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098984 bus1=bus_38.1.2.3.4 bus2=bus_31.1.2.3.4 length=0.055 phases=4 units=km rmatrix=[0.47273 | 0 0.47273 | 0 0 0.47273 | 0 0 0 1.1758 ] xmatrix=[0.090821 |  0 0.090821 | 0 0 0.090821 | 0 0 0 1.2031] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098986 bus1=bus_38.1.2.3.4 bus2=bus_40.1.2.3.4 length=0.017 phases=4 units=km rmatrix=[0.47059 | 0 0.47059 | 0 0 0.47059 | 0 0 0 1.1765 ] xmatrix=[0.058766 |  0 0.058766 | 0 0 0.058766 | 0 0 0 1.2137] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098987 bus1=bus_38.1.2.3.4 bus2=bus_39.1.2.3.4 length=0.051 phases=4 units=km rmatrix=[0.21569 | 0 0.21569 | 0 0 0.21569 | 0 0 0 1.2614 ] xmatrix=[0.078232 |  0 0.078232 | 0 0 0.078232 | 0 0 0 1.2073] cmatrix=[3e-07 | 0 3e-07 | 0 0 3e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098988 bus1=bus_38.1.2.3.4 bus2=bus_41.1.2.3.4 length=0.03 phases=4 units=km rmatrix=[0.46667 | 0 0.46667 | 0 0 0.46667 | 0 0 0 1.1778 ] xmatrix=[0.066706 |  0 0.066706 | 0 0 0.066706 | 0 0 0 1.2111] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098989 bus1=bus_41.1.2.3.4 bus2=bus_42.1.2.3.4 length=0.074 phases=4 units=km rmatrix=[0.45946 | 0 0.45946 | 0 0 0.45946 | 0 0 0 1.1802 ] xmatrix=[0.081087 |  0 0.081087 | 0 0 0.081087 | 0 0 0 1.2063] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098990 bus1=bus_42.1.2.3.4 bus2=bus_45.1.2.3.4 length=0.033 phases=4 units=km rmatrix=[0.45455 | 0 0.45455 | 0 0 0.45455 | 0 0 0 1.1818 ] xmatrix=[0.090916 |  0 0.090916 | 0 0 0.090916 | 0 0 0 1.203] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098991 bus1=bus_42.1.2.3.4 bus2=bus_43.1.2.3.4 length=0.052 phases=4 units=km rmatrix=[0.92308 | 0 0.92308 | 0 0 0.92308 | 0 0 0 1.0256 ] xmatrix=[0.076727 |  0 0.076727 | 0 0 0.076727 | 0 0 0 1.3411] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098994 bus1=bus_42.1.2.3.4 bus2=bus_44.1.2.3.4 length=0.019 phases=4 units=km rmatrix=[0.94737 | 0 0.94737 | 0 0 0.94737 | 0 0 0 1.0175 ] xmatrix=[0.10533 |  0 0.10533 | 0 0 0.10533 | 0 0 0 1.3316] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098996 bus1=bus_45.1.2.3.4 bus2=bus_46.1.2.3.4 length=0.067 phases=4 units=km rmatrix=[0.46269 | 0 0.46269 | 0 0 0.46269 | 0 0 0 1.1791 ] xmatrix=[0.074554 |  0 0.074554 | 0 0 0.074554 | 0 0 0 1.2085] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098997 bus1=bus_46.1.2.3.4 bus2=bus_50.1.2.3.4 length=0.064 phases=4 units=km rmatrix=[0.46875 | 0 0.46875 | 0 0 0.46875 | 0 0 0 1.1771 ] xmatrix=[0.078049 |  0 0.078049 | 0 0 0.078049 | 0 0 0 1.2073] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6099000 bus1=bus_46.1.2.3.4 bus2=bus_48.1.2.3.4 length=0.043 phases=4 units=km rmatrix=[0.93023 | 0 0.93023 | 0 0 0.93023 | 0 0 0 1.0233 ] xmatrix=[0.092787 |  0 0.092787 | 0 0 0.092787 | 0 0 0 1.3357] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6099002 bus1=bus_48.1.2.3.4 bus2=bus_49.1.2.3.4 length=0.078 phases=4 units=km rmatrix=[0.92308 | 0 0.92308 | 0 0 0.92308 | 0 0 0 1.0256 ] xmatrix=[0.076929 |  0 0.076929 | 0 0 0.076929 | 0 0 0 1.341] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6099004 bus1=bus_50.1.2.3.4 bus2=bus_51.1.2.3.4 length=0.058 phases=4 units=km rmatrix=[0.93103 | 0 0.93103 | 0 0 0.93103 | 0 0 0 1.023 ] xmatrix=[0.086123 |  0 0.086123 | 0 0 0.086123 | 0 0 0 1.338] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6099005 bus1=bus_51.1.2.3.4 bus2=bus_52.1.2.3.4 length=0.01 phases=4 units=km rmatrix=[0.9 | 0 0.9 | 0 0 0.9 | 0 0 0 1.0333 ] xmatrix=[0.099903 |  0 0.099903 | 0 0 0.099903 | 0 0 0 1.3334] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6099006 bus1=bus_52.1.2.3.4 bus2=bus_53.1.2.3.4 length=0.07 phases=4 units=km rmatrix=[0.92857 | 0 0.92857 | 0 0 0.92857 | 0 0 0 1.0238 ] xmatrix=[0.085721 |  0 0.085721 | 0 0 0.085721 | 0 0 0 1.3381] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6104964 bus1=bus_72.1.2.3.4 bus2=bus_73.1.2.3.4 length=0.034 phases=4 units=km rmatrix=[0.94118 | 0 0.94118 | 0 0 0.94118 | 0 0 0 1.0196 ] xmatrix=[0.088242 |  0 0.088242 | 0 0 0.088242 | 0 0 0 1.3373] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6123431 bus1=bus_53.1.2.3.4 bus2=bus_55.1.2.3.4 length=0.048 phases=4 units=km rmatrix=[0.9375 | 0 0.9375 | 0 0 0.9375 | 0 0 0 1.0208 ] xmatrix=[0.083121 |  0 0.083121 | 0 0 0.083121 | 0 0 0 1.339] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6129362 bus1=bus_46.1.2.3.4 bus2=bus_47.1.2.3.4 length=0.027 phases=4 units=km rmatrix=[0.48148 | 0 0.48148 | 0 0 0.48148 | 0 0 0 1.1728 ] xmatrix=[0.074118 |  0 0.074118 | 0 0 0.074118 | 0 0 0 1.2086] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6130194 bus1=bus2.1.2.3.4 bus2=bus9.1.2.3.4 length=0.1 phases=4 units=km rmatrix=[0.22 | 0 0.22 | 0 0 0.22 | 0 0 0 1.26 ] xmatrix=[0.080111 |  0 0.080111 | 0 0 0.080111 | 0 0 0 1.2066] cmatrix=[3e-07 | 0 3e-07 | 0 0 3e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6131160 bus1=bus2.1.2.3.4 bus2=bus_79.1.2.3.4 length=0.129 phases=4 units=km rmatrix=[0.46512 | 0 0.46512 | 0 0 0.46512 | 0 0 0 1.1783 ] xmatrix=[0.085237 |  0 0.085237 | 0 0 0.085237 | 0 0 0 1.2049] cmatrix=[2.5e-07 | 0 2.5e-07 | 0 0 2.5e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6131163 bus1=bus_24.1.2.3.4 bus2=bus_23.1.2.3.4 length=0.051 phases=4 units=km rmatrix=[0.92157 | 0 0.92157 | 0 0 0.92157 | 0 0 0 1.0261 ] xmatrix=[0.078232 |  0 0.078232 | 0 0 0.078232 | 0 0 0 1.3406] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6131164 bus1=bus_25.1.2.3.4 bus2=bus_24.1.2.3.4 length=0.029 phases=4 units=km rmatrix=[0.93103 | 0 0.93103 | 0 0 0.93103 | 0 0 0 1.023 ] xmatrix=[0.069007 |  0 0.069007 | 0 0 0.069007 | 0 0 0 1.3437] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6154463 bus1=bus_77.1.2.3.4 bus2=bus_78.1.2.3.4 length=0.081 phases=4 units=km rmatrix=[0.92593 | 0 0.92593 | 0 0 0.92593 | 0 0 0 1.0247 ] xmatrix=[0.086491 |  0 0.086491 | 0 0 0.086491 | 0 0 0 1.3378] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6154465 bus1=bus_53.1.2.3.4 bus2=bus_54.1.2.3.4 length=0.015 phases=4 units=km rmatrix=[0.93333 | 0 0.93333 | 0 0 0.93333 | 0 0 0 1.0222 ] xmatrix=[0.066602 |  0 0.066602 | 0 0 0.066602 | 0 0 0 1.3445] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6154467 bus1=bus_15.1.2.3.4 bus2=bus_14.1.2.3.4 length=0.018 phases=4 units=km rmatrix=[0.94444 | 0 0.94444 | 0 0 0.94444 | 0 0 0 1.0185 ] xmatrix=[0.055501 |  0 0.055501 | 0 0 0.055501 | 0 0 0 1.3482] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6154482 bus1=bus2.1.2.3.4 bus2=bus_10.1.2.3.4 length=0.144 phases=4 units=km rmatrix=[0.21528 | 0 0.21528 | 0 0 0.21528 | 0 0 0 1.2616 ] xmatrix=[0.083339 |  0 0.083339 | 0 0 0.083339 | 0 0 0 1.2056] cmatrix=[3e-07 | 0 3e-07 | 0 0 3e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6159758 bus1=bus_21.1.2.3.4 bus2=bus_20.1.2.3.4 length=0.038 phases=4 units=km rmatrix=[0.92105 | 0 0.92105 | 0 0 0.92105 | 0 0 0 1.0263 ] xmatrix=[0.078953 |  0 0.078953 | 0 0 0.078953 | 0 0 0 1.3403] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6173885 bus1=bus5.1.2.3.4 bus2=bus6.1.2.3.4 length=0.16 phases=4 units=km rmatrix=[0.21875 | 0 0.21875 | 0 0 0.21875 | 0 0 0 1.2604 ] xmatrix=[0.081289 |  0 0.081289 | 0 0 0.081289 | 0 0 0 1.2062] cmatrix=[3e-07 | 0 3e-07 | 0 0 3e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6173983 bus1=bus2.1.2.3.4 bus2=bus5.1.2.3.4 length=0.01 phases=4 units=km rmatrix=[0.2 | 0 0.2 | 0 0 0.2 | 0 0 0 1.2667 ] xmatrix=[0.099903 |  0 0.099903 | 0 0 0.099903 | 0 0 0 1.2] cmatrix=[3e-07 | 0 3e-07 | 0 0 3e-07 | 0 0 0 0 ] Rg=0 Xg=0
+new line.6098596 bus1=bus3.1.2.3.4 bus2=bus2.1.2.3.4 length=0.026 phases=4 units=km rmatrix=[1.1923 | 0 1.1923 | 0 0 1.1923 | 0 0 0 0.9359 ] xmatrix=[0.076969 |  0 0.076969 | 0 0 0.076969 | 0 0 0 1.3077] cmatrix=[2e-07 | 0 2e-07 | 0 0 2e-07 | 0 0 0 0 ] Rg=0 Xg=0
+
+!!transformer
+!!phase 1 
+new transformer.Transf2ph1 phases=1 windings=2 
+~ buses=[bus1.1.2 bus2.4.1] 
+~ conns=[delta wye] 
+~ kvs=[20 (0.4 3 sqrt /)] 
+~ kvas=[(150 3 /) (150 3 /)] 
+~ taps=[1,1] 
+~ Xhl=4 %loadloss=1.3 %noloadloss=0.17 Sub=Yes 
+~ Maxtap=1.0625 Mintap=0.9375 Numtap=5 %imag=0 
+
+!!phase 2 
+new transformer.Transf2ph2 phases=1 windings=2 
+~ buses=[bus1.2.3 bus2.4.2] 
+~ conns=[delta wye] 
+~ kvs=[20 (0.4 3 sqrt /)] 
+~ kvas=[(150 3 /) (150 3 /)] 
+~ taps=[1,1] 
+~ Xhl=4 %loadloss=1.3 %noloadloss=0.17 Sub=Yes 
+~ Maxtap=1.0625 Mintap=0.9375 Numtap=5 %imag=0 
+
+!!phase 3 
+new transformer.Transf2ph3 phases=1 windings=2 
+~ buses=[bus1.3.1 bus2.4.3] 
+~ conns=[delta wye] 
+~ kvs=[20 (0.4 3 sqrt /)] 
+~ kvas=[(150 3 /) (150 3 /)] 
+~ taps=[1,1] 
+~ Xhl=4 %loadloss=1.3 %noloadloss=0.17 Sub=Yes 
+~ Maxtap=1.0625 Mintap=0.9375 Numtap=5 %imag=0 
+
+new Reactor.reacbus2 phases=1 bus=bus2.4 R=0.01 X=0.01 
+
+!Reactors
+new Reactor.reacbus3 phases=1 bus=bus3.4 R=1 X=0 
+new Reactor.reacbus4 phases=1 bus=bus4.4 R=1 X=0 
+new Reactor.reacbus5 phases=1 bus=bus5.4 R=1 X=0 
+new Reactor.reacbus6 phases=1 bus=bus6.4 R=1 X=0 
+new Reactor.reacbus7 phases=1 bus=bus7.4 R=1 X=0 
+new Reactor.reacbus8 phases=1 bus=bus8.4 R=1 X=0 
+new Reactor.reacbus9 phases=1 bus=bus9.4 R=1 X=0 
+new Reactor.reacbus_10 phases=1 bus=bus_10.4 R=1 X=0 
+new Reactor.reacbus_11 phases=1 bus=bus_11.4 R=1 X=0 
+new Reactor.reacbus_12 phases=1 bus=bus_12.4 R=1 X=0 
+new Reactor.reacbus_13 phases=1 bus=bus_13.4 R=1 X=0 
+new Reactor.reacbus_14 phases=1 bus=bus_14.4 R=1 X=0 
+new Reactor.reacbus_15 phases=1 bus=bus_15.4 R=1 X=0 
+new Reactor.reacbus_16 phases=1 bus=bus_16.4 R=1 X=0 
+new Reactor.reacbus_17 phases=1 bus=bus_17.4 R=1 X=0 
+new Reactor.reacbus_18 phases=1 bus=bus_18.4 R=1 X=0 
+new Reactor.reacbus_19 phases=1 bus=bus_19.4 R=1 X=0 
+new Reactor.reacbus_20 phases=1 bus=bus_20.4 R=1 X=0 
+new Reactor.reacbus_21 phases=1 bus=bus_21.4 R=1 X=0 
+new Reactor.reacbus_22 phases=1 bus=bus_22.4 R=1 X=0 
+new Reactor.reacbus_23 phases=1 bus=bus_23.4 R=1 X=0 
+new Reactor.reacbus_24 phases=1 bus=bus_24.4 R=1 X=0 
+new Reactor.reacbus_25 phases=1 bus=bus_25.4 R=1 X=0 
+new Reactor.reacbus_26 phases=1 bus=bus_26.4 R=1 X=0 
+new Reactor.reacbus_27 phases=1 bus=bus_27.4 R=1 X=0 
+new Reactor.reacbus_28 phases=1 bus=bus_28.4 R=1 X=0 
+new Reactor.reacbus_29 phases=1 bus=bus_29.4 R=1 X=0 
+new Reactor.reacbus_30 phases=1 bus=bus_30.4 R=1 X=0 
+new Reactor.reacbus_31 phases=1 bus=bus_31.4 R=1 X=0 
+new Reactor.reacbus_32 phases=1 bus=bus_32.4 R=1 X=0 
+new Reactor.reacbus_33 phases=1 bus=bus_33.4 R=1 X=0 
+new Reactor.reacbus_34 phases=1 bus=bus_34.4 R=1 X=0 
+new Reactor.reacbus_35 phases=1 bus=bus_35.4 R=1 X=0 
+new Reactor.reacbus_36 phases=1 bus=bus_36.4 R=1 X=0 
+new Reactor.reacbus_37 phases=1 bus=bus_37.4 R=1 X=0 
+new Reactor.reacbus_38 phases=1 bus=bus_38.4 R=1 X=0 
+new Reactor.reacbus_39 phases=1 bus=bus_39.4 R=1 X=0 
+new Reactor.reacbus_40 phases=1 bus=bus_40.4 R=1 X=0 
+new Reactor.reacbus_41 phases=1 bus=bus_41.4 R=1 X=0 
+new Reactor.reacbus_42 phases=1 bus=bus_42.4 R=1 X=0 
+new Reactor.reacbus_43 phases=1 bus=bus_43.4 R=1 X=0 
+new Reactor.reacbus_44 phases=1 bus=bus_44.4 R=1 X=0 
+new Reactor.reacbus_45 phases=1 bus=bus_45.4 R=1 X=0 
+new Reactor.reacbus_46 phases=1 bus=bus_46.4 R=1 X=0 
+new Reactor.reacbus_47 phases=1 bus=bus_47.4 R=1 X=0 
+new Reactor.reacbus_48 phases=1 bus=bus_48.4 R=1 X=0 
+new Reactor.reacbus_49 phases=1 bus=bus_49.4 R=1 X=0 
+new Reactor.reacbus_50 phases=1 bus=bus_50.4 R=1 X=0 
+new Reactor.reacbus_51 phases=1 bus=bus_51.4 R=1 X=0 
+new Reactor.reacbus_52 phases=1 bus=bus_52.4 R=1 X=0 
+new Reactor.reacbus_53 phases=1 bus=bus_53.4 R=1 X=0 
+new Reactor.reacbus_54 phases=1 bus=bus_54.4 R=1 X=0 
+new Reactor.reacbus_55 phases=1 bus=bus_55.4 R=1 X=0 
+new Reactor.reacbus_56 phases=1 bus=bus_56.4 R=1 X=0 
+new Reactor.reacbus_57 phases=1 bus=bus_57.4 R=1 X=0 
+new Reactor.reacbus_58 phases=1 bus=bus_58.4 R=1 X=0 
+new Reactor.reacbus_59 phases=1 bus=bus_59.4 R=1 X=0 
+new Reactor.reacbus_60 phases=1 bus=bus_60.4 R=1 X=0 
+new Reactor.reacbus_61 phases=1 bus=bus_61.4 R=1 X=0 
+new Reactor.reacbus_62 phases=1 bus=bus_62.4 R=1 X=0 
+new Reactor.reacbus_63 phases=1 bus=bus_63.4 R=1 X=0 
+new Reactor.reacbus_64 phases=1 bus=bus_64.4 R=1 X=0 
+new Reactor.reacbus_65 phases=1 bus=bus_65.4 R=1 X=0 
+new Reactor.reacbus_66 phases=1 bus=bus_66.4 R=1 X=0 
+new Reactor.reacbus_67 phases=1 bus=bus_67.4 R=1 X=0 
+new Reactor.reacbus_68 phases=1 bus=bus_68.4 R=1 X=0 
+new Reactor.reacbus_69 phases=1 bus=bus_69.4 R=1 X=0 
+new Reactor.reacbus_70 phases=1 bus=bus_70.4 R=1 X=0 
+new Reactor.reacbus_71 phases=1 bus=bus_71.4 R=1 X=0 
+new Reactor.reacbus_72 phases=1 bus=bus_72.4 R=1 X=0 
+new Reactor.reacbus_73 phases=1 bus=bus_73.4 R=1 X=0 
+new Reactor.reacbus_74 phases=1 bus=bus_74.4 R=1 X=0 
+new Reactor.reacbus_75 phases=1 bus=bus_75.4 R=1 X=0 
+new Reactor.reacbus_76 phases=1 bus=bus_76.4 R=1 X=0 
+new Reactor.reacbus_77 phases=1 bus=bus_77.4 R=1 X=0 
+new Reactor.reacbus_78 phases=1 bus=bus_78.4 R=1 X=0 
+new Reactor.reacbus_79 phases=1 bus=bus_79.4 R=1 X=0 
+
+
+!!loads
+new load.Cerkev_a bus1=bus_65.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.002 kvar=0.002 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Cerkev_b bus1=bus_65.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.004 kvar=0.004 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Cerkev_c bus1=bus_65.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.004 kvar=0.004 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha10_a bus1=bus_36.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.227 kvar=0.196 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha10_b bus1=bus_36.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.151 kvar=0.131 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha10_c bus1=bus_36.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.379 kvar=0.326 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha11_a bus1=bus_34.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.075 kvar=0.065 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha11_b bus1=bus_34.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.05 kvar=0.043 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha11_c bus1=bus_34.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.125 kvar=0.108 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha12_a bus1=bus_35.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.205 kvar=0.176 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha12_b bus1=bus_35.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.136 kvar=0.118 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha12_c bus1=bus_35.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.341 kvar=0.294 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha13_a bus1=bus_37.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.033 kvar=0.029 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha13_b bus1=bus_37.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.022 kvar=0.019 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha13_c bus1=bus_37.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.055 kvar=0.048 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha14_a bus1=bus_10.1.4 phases=1 kV=(0.4 3 sqrt /) kw=1.305 kvar=1.125 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha14_b bus1=bus_10.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.979 kvar=0.844 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha14_c bus1=bus_10.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.979 kvar=0.844 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha15_a bus1=bus_40.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.725 kvar=0.625 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha15_b bus1=bus_40.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.484 kvar=0.417 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha15_c bus1=bus_40.3.4 phases=1 kV=(0.4 3 sqrt /) kw=1.209 kvar=1.042 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha15aGP bus1=bus_38.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha15a_a bus1=bus_39.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.259 kvar=0.223 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha15a_b bus1=bus_39.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.173 kvar=0.149 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha15a_c bus1=bus_39.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.431 kvar=0.372 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha16_a bus1=bus_43.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.067 kvar=0.058 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha16_b bus1=bus_43.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.05 kvar=0.043 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha16_c bus1=bus_43.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.05 kvar=0.043 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha17_a bus1=bus_41.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.317 kvar=0.273 model=1 status=fixed Vminpu=0.95 Vmaxpu=1.05 
+
+new load.Suha17_b bus1=bus_41.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.211 kvar=0.182 model=1 status=fixed Vminpu=0.95 Vmaxpu=1.05 
+
+new load.Suha17_c bus1=bus_41.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.528 kvar=0.455 model=1 status=fixed Vminpu=0.95 Vmaxpu=1.05 
+
+new load.Suha18_a bus1=bus_44.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.965 kvar=0.832 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha18_b bus1=bus_44.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.724 kvar=0.624 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha18_c bus1=bus_44.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.724 kvar=0.624 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha19GP bus1=bus_42.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha19_a bus1=bus_49.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.449 kvar=0.387 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha19_b bus1=bus_49.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.337 kvar=0.29 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha19_c bus1=bus_49.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.337 kvar=0.29 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha1_a bus1=bus_15.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha1a_a bus1=bus_28.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.044 kvar=0.038 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha1a_b bus1=bus_28.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.03 kvar=0.025 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha1a_c bus1=bus_28.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.074 kvar=0.064 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha20_a bus1=bus_48.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.484 kvar=0.417 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha20_b bus1=bus_48.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.363 kvar=0.313 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha20_c bus1=bus_48.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.363 kvar=0.313 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha21_a bus1=bus_55.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.299 kvar=0.258 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha21_b bus1=bus_55.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.224 kvar=0.193 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha21_c bus1=bus_55.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.224 kvar=0.193 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha22_a bus1=bus_54.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.147 kvar=0.126 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha22_b bus1=bus_54.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.11 kvar=0.095 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha22_c bus1=bus_54.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.11 kvar=0.095 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha22a_a bus1=bus_53.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.146 kvar=0.126 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha22a_b bus1=bus_53.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.11 kvar=0.095 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha22a_c bus1=bus_53.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.11 kvar=0.095 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha23_a bus1=bus_69.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.467 kvar=0.402 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha23_b bus1=bus_69.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.934 kvar=0.805 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha23_c bus1=bus_69.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.934 kvar=0.805 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha24_a bus1=bus_68.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.414 kvar=0.357 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha24_b bus1=bus_68.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.828 kvar=0.713 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha24_c bus1=bus_68.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.828 kvar=0.713 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha24a_a bus1=bus_77.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.167 kvar=0.144 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha24a_b bus1=bus_77.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.334 kvar=0.288 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha24a_c bus1=bus_77.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.334 kvar=0.288 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha25_a bus1=bus_75.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.352 kvar=0.303 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha25_b bus1=bus_75.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.704 kvar=0.607 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha25_c bus1=bus_75.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.704 kvar=0.607 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha26_a bus1=bus_74.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.126 kvar=0.109 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha26_b bus1=bus_74.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.253 kvar=0.218 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha26_c bus1=bus_74.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.253 kvar=0.218 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha27_a bus1=bus_70.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha27_b bus1=bus_70.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.002 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha27_c bus1=bus_70.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.002 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha28_a bus1=bus_71.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.499 kvar=0.43 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha28_b bus1=bus_71.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.998 kvar=0.86 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha28_c bus1=bus_71.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.998 kvar=0.86 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha29_a bus1=bus_64.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.255 kvar=0.22 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha29_b bus1=bus_64.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.511 kvar=0.44 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha29_c bus1=bus_64.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.511 kvar=0.44 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha29a bus1=bus_66.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha2_a bus1=bus_16.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.146 kvar=0.126 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha2_b bus1=bus_16.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.098 kvar=0.084 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha2_c bus1=bus_16.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.244 kvar=0.21 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha2a_a bus1=bus_17.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.125 kvar=0.108 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha2a_b bus1=bus_17.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.083 kvar=0.072 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha2a_c bus1=bus_17.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.209 kvar=0.18 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha3 bus1=bus_12.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha30_a bus1=bus_63.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.008 kvar=0.007 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha30_b bus1=bus_63.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.016 kvar=0.013 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha30_c bus1=bus_63.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.016 kvar=0.013 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha31_a bus1=bus_61.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.238 kvar=0.205 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha31_b bus1=bus_61.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.476 kvar=0.41 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha31_c bus1=bus_61.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.476 kvar=0.41 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha32_a bus1=bus_62.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.314 kvar=0.27 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha32_b bus1=bus_62.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.627 kvar=0.541 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha32_c bus1=bus_62.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.627 kvar=0.541 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha33_a bus1=bus_58.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.245 kvar=0.211 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha33_b bus1=bus_58.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.49 kvar=0.422 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha33_c bus1=bus_58.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.49 kvar=0.422 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha34_a bus1=bus_59.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.099 kvar=0.085 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha34_b bus1=bus_59.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.197 kvar=0.17 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha34_c bus1=bus_59.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.197 kvar=0.17 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha35_a bus1=bus_60.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha35_b bus1=bus_60.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha35_c bus1=bus_60.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha37_a bus1=bus_57.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.226 kvar=0.195 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha37_b bus1=bus_57.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.452 kvar=0.39 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha37_c bus1=bus_57.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.452 kvar=0.39 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha38_a bus1=bus_56.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.847 kvar=0.73 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha38_b bus1=bus_56.2.4 phases=1 kV=(0.4 3 sqrt /) kw=1.693 kvar=1.459 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha38_c bus1=bus_56.3.4 phases=1 kV=(0.4 3 sqrt /) kw=1.693 kvar=1.459 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha39_a bus1=bus3.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.131 kvar=0.113 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha39_b bus1=bus3.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.262 kvar=0.226 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha39_c bus1=bus3.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.262 kvar=0.226 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha40_a bus1=bus4.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.553 kvar=0.476 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha40_b bus1=bus4.2.4 phases=1 kV=(0.4 3 sqrt /) kw=1.105 kvar=0.953 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha40_c bus1=bus4.3.4 phases=1 kV=(0.4 3 sqrt /) kw=1.105 kvar=0.953 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha41_a bus1=bus_25.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.732 kvar=0.631 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha41_b bus1=bus_25.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.549 kvar=0.473 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha41_c bus1=bus_25.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.549 kvar=0.473 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha42_a bus1=bus_51.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.167 kvar=0.144 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha42_b bus1=bus_51.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.125 kvar=0.108 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha42_c bus1=bus_51.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.125 kvar=0.108 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha43_a bus1=bus_52.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.105 kvar=0.09 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha43_b bus1=bus_52.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.079 kvar=0.068 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha43_c bus1=bus_52.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.079 kvar=0.068 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha44_a bus1=bus_27.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.035 kvar=0.03 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha44_b bus1=bus_27.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.07 kvar=0.061 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha44_c bus1=bus_27.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.07 kvar=0.061 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha45_a bus1=bus_72.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.044 kvar=0.038 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha45_b bus1=bus_72.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.089 kvar=0.076 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha45_c bus1=bus_72.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.089 kvar=0.076 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha45a_a bus1=bus_73.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.148 kvar=0.128 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha45a_b bus1=bus_73.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.111 kvar=0.096 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha45a_c bus1=bus_73.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.111 kvar=0.096 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha46_a bus1=bus_26.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.183 kvar=0.158 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha46_b bus1=bus_26.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.367 kvar=0.316 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha46_c bus1=bus_26.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.367 kvar=0.316 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha47_a bus1=bus_20.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.2 kvar=0.173 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha47_b bus1=bus_20.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.133 kvar=0.115 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha47_c bus1=bus_20.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.334 kvar=0.288 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha48_a bus1=bus_45.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.12 kvar=0.104 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha48_b bus1=bus_45.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.08 kvar=0.069 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha48_c bus1=bus_45.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.201 kvar=0.173 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha49_a bus1=bus_50.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.325 kvar=0.28 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha49_b bus1=bus_50.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.243 kvar=0.21 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha49_c bus1=bus_50.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.243 kvar=0.21 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha4_a bus1=bus_11.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.263 kvar=0.226 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha4_b bus1=bus_11.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.526 kvar=0.453 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha4_c bus1=bus_11.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.526 kvar=0.453 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha50_a bus1=bus_23.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.193 kvar=0.166 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha50_b bus1=bus_23.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.129 kvar=0.111 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha50_c bus1=bus_23.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.322 kvar=0.277 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha51_a bus1=bus_14.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.382 kvar=0.329 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha51_b bus1=bus_14.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.255 kvar=0.22 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha51_c bus1=bus_14.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.637 kvar=0.549 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha52_a bus1=bus_22.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.149 kvar=0.128 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha52_b bus1=bus_22.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.099 kvar=0.086 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha52_c bus1=bus_22.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.248 kvar=0.214 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha53_a bus1=bus_24.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.132 kvar=0.114 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha53_b bus1=bus_24.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.099 kvar=0.085 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha53_c bus1=bus_24.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.099 kvar=0.085 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha54_a bus1=bus_18.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.031 kvar=0.027 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha54_b bus1=bus_18.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.021 kvar=0.018 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha54_c bus1=bus_18.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.051 kvar=0.044 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha55_a bus1=bus_19.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.114 kvar=0.099 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha55_b bus1=bus_19.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.076 kvar=0.066 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha55_c bus1=bus_19.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.191 kvar=0.164 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha56_a bus1=bus_78.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.418 kvar=0.36 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha56_b bus1=bus_78.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.314 kvar=0.27 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha56_c bus1=bus_78.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.314 kvar=0.27 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha57_a bus1=bus_76.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.194 kvar=0.167 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha57_b bus1=bus_76.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.388 kvar=0.334 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha57_c bus1=bus_76.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.388 kvar=0.334 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha58_a bus1=bus_79.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.199 kvar=0.172 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha58_b bus1=bus_79.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.149 kvar=0.129 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha58_c bus1=bus_79.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.149 kvar=0.129 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha59_a bus1=bus_21.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.188 kvar=0.162 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha59_b bus1=bus_21.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.141 kvar=0.121 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha59_c bus1=bus_21.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.141 kvar=0.121 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha5_a bus1=bus_30.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.629 kvar=0.542 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha5_b bus1=bus_30.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.419 kvar=0.361 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha5_c bus1=bus_30.3.4 phases=1 kV=(0.4 3 sqrt /) kw=1.048 kvar=0.903 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha6_a bus1=bus_29.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.066 kvar=0.057 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha6_b bus1=bus_29.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.044 kvar=0.038 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha6_c bus1=bus_29.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.11 kvar=0.094 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha7_a bus1=bus_32.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.157 kvar=0.135 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha7_b bus1=bus_32.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.314 kvar=0.27 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha7_c bus1=bus_32.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.314 kvar=0.27 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha7a_a bus1=bus_33.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.14 kvar=0.121 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha7a_b bus1=bus_33.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.28 kvar=0.242 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha7a_c bus1=bus_33.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.28 kvar=0.242 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha8_a bus1=bus7.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.433 kvar=0.373 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha8_b bus1=bus7.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.867 kvar=0.747 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha8_c bus1=bus7.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.867 kvar=0.747 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha9_a bus1=bus8.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.234 kvar=0.201 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha9_b bus1=bus8.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.467 kvar=0.403 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suha9_c bus1=bus8.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.467 kvar=0.403 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+new load.Suhapst15 bus1=bus_46.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0.001 model=1 status=fixed Vminpu=0.1 Vmaxpu=2 
+
+
+!!controllable generation
+new generator.PV1a bus1=bus_15.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV1b bus1=bus_15.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV1c bus1=bus_15.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV2a bus1=bus_22.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV2b bus1=bus_22.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV2c bus1=bus_22.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV3a bus1=bus_32.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV3b bus1=bus_32.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV3c bus1=bus_32.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV4a bus1=bus7.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV4b bus1=bus7.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV4c bus1=bus7.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV5a bus1=bus_55.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV5b bus1=bus_55.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV5c bus1=bus_55.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV6a bus1=bus_78.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV6b bus1=bus_78.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV6c bus1=bus_78.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV7a bus1=bus_50.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV7b bus1=bus_50.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV7c bus1=bus_50.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV8a bus1=bus_14.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV8b bus1=bus_14.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV8c bus1=bus_14.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV9a bus1=bus_31.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV9b bus1=bus_31.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV9c bus1=bus_31.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV10a bus1=bus_14.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV10b bus1=bus_14.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV10c bus1=bus_14.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV11a bus1=bus_61.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV11b bus1=bus_61.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV11c bus1=bus_61.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV12a bus1=bus_69.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV12b bus1=bus_69.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV12c bus1=bus_69.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV13a bus1=bus_29.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV13b bus1=bus_29.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV13c bus1=bus_29.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV14a bus1=bus_55.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV14b bus1=bus_55.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV14c bus1=bus_55.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+new generator.PV15a bus1=bus_24.1.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV15b bus1=bus_24.2.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+new generator.PV15c bus1=bus_24.3.4 phases=1 kV=(0.4 3 sqrt /) kw=0.001 kvar=0 model=1 Vmin=0.1 Vmax=2 
+
+set Algorithm=Normal
+set maxiterations=150
+set tolerance=0.001
